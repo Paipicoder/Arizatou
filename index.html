@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="aziza.css">
+
+  <title></title>
+</head>
+
+<body>
+  <style>
+  body{
+    display:auto;
+    background-image:url("fond1.jpg");
+    
+  }
+    h1{
+      background:#F64040A3;
+     
+      color:white;
+      
+      border-radius:8px;
+    
+      position:auto;
+      border:2px outset #5C209AA3;
+      
+      
+      
+    }
+    h1 span{
+      border-radius: 5px;
+      background:black;
+    }
+    
+    video{
+      display:block;
+      width:100%;
+      height:600px;
+      margin:3px 3px 0px 0px;
+      border:2px inset red;
+      border-radius: 9px;
+      box-shadow: 4px 4px 4px 0px inset #C5B8BBF5;
+      background:transparent;
+  background: linear-gradient(135deg, rgba(255, 0, 150, 0.4), rgba(0, 204, 255, 0.4));
+  background-size: 400% 400%;
+  animation: gradientAnimation 5s ease infinite;
+  
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+    
+  </style>
+<h1>LO1 <span>Tube</span></h1>
+  
+<video id="vid1"poster="1.mp4"src="1.mp4"controls></video>
+<video src="2.mp4"poster="2.mp4"controls></video>
+<video src="3.mp4"poster="3.mp4"controls></video>
+<video src="4.mp4"poster="4.mp4"controls></video>
+<video poster="5.mp4"src="5.mp4"controls></video>
+<video src="6.mp4"poster="6.mp4"controls></video>
+<video src="7.mp4"poster="7.mp4"controls></video>
+<video src="8.mp4"poster="8.mp4"controls></video>
+<video poster="9.mp4"src="9.mp4"controls></video>
+<video src="10.mp4"poster="10.mp4"controls></video>
+<video src="11.mp4"poster="11.mp4"controls></video>
+<video src="12.mp4"poster="12.mp4"controls></video>
+<video poster="13.mp4"src="13.mp4"controls></video>
+<video src="14.mp4"poster="14.mp4"controls></video>
+<video src="15.mp4"poster="15.mp4"controls></video>
+<video src="16.mp4"poster="16.mp4"controls></video>
+<video poster="17.mp4"src="17.mp4"controls></video>
+<video src="18.mp4"poster="18.mp4"controls></video>
+<video src="19.mp4"poster="19.mp4"controls></video>
+<video src="20.mp4"poster="20.mp4"controls></video>
+<video poster="21.mp4"src="21.mp4"controls></video>
+<video src="22.mp4"poster="22.mp4"controls></video>
+<video src="23.mp4"poster="23.mp4"controls></video>
+<video src="24.mp4"poster="24.mp4"controls></video>
+<video poster="25.mp4"src="25.mp4"controls></video>
+<video src="26.mp4"poster="26.mp4"controls></video>
+<video src="27.mp4"poster="27.mp4"controls></video>
+<video src="28.mp4"poster="28.mp4"controls></video>
+<video poster="29.mp4"src="29.mp4"controls></video>
+<video src="30.mp4"poster="30.mp4"controls></video>
+<video src="31.mp4"poster="31.mp4"controls></video>
+<video src="32.mp4"poster="32.mp4"controls></video>
+<video src="33.mp4"poster="33.mp4"controls></video>
+<video src="34.mp4"poster="34.mp4"controls></video>
+<video src="35.mp4"poster="35.mp4"controls></video>
+<video poster="36.mp4"src="36.mp4"controls></video>
+<video src="37.mp4"poster="37.mp4"controls></video>
+<video src="38.mp4"poster="38.mp4"controls></video>
+<video src="39.mp4"poster="39.mp4"controls></video>
+<video poster="40.mp4"src="40.mp4"controls></video>
+<video src="41.mp4"poster="42.mp4"controls></video>
+<video src="42.mp4"poster="42.mp4"controls></video>
+<video src="43.mp4"poster="43.mp4"controls></video>
+<video poster="44.mp4"src="44.mp4"controls></video>
+<video src="45.mp4"poster="45.mp4"controls></video>
+<video src="46.mp4"poster="46.mp4"controls></video>
+<video src="47.mp4"poster="47.mp4"controls></video>
+<video poster="48.mp4"src="48.mp4"controls></video>
+<video src="49.mp4"poster="49.mp4"controls></video>
+<video src="50.mp4"poster="50.mp4"controls></video>
+<video src="51.mp4"poster="51.mp4"controls></video>
+<video poster="52.mp4"src="52.mp4"controls></video>
+<video src="53.mp4"poster="53.mp4"controls></video>
+<video src="54.mp4"poster="54.mp4"controls></video>
+<video src="55.mp4"poster="55.mp4"controls></video
+<video src="56.mp4"poster="56.
+mp4"controls></video>
+<video src="57.mp4"poster="57.mp4"controls></video>
+<video src="58.mp4"poster="58.mp4"controls></video>
+<video src="59.mp4"poster="59.mp4"controls></video
+<video src="60.mp4"poster="60.mp4"controls></video>
+<video src="61.mp4"poster="61.mp4"controls></video>
+<video src="62.mp4"poster="62.mp4"controls></video>
+<script>
+
+const videos = document.querySelectorAll('video');
+
+
+ videos.forEach(video => {
+    video.addEventListener('play', () => {
+         videos.forEach(v => {
+           
+              if (v !== video) {
+                   v.pause();
+                   v.currentTime = 0;
+                  }
+                });
+            });
+        });
+        
+</script>
+</body>
+
+</html>
